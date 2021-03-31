@@ -1,5 +1,5 @@
 import { Box, Flex, Icon, Text } from "@chakra-ui/react"
-import NotificationBell from "../components/NotificationBell"
+import NotificationBell from "../components/notificationBell"
 import RoundedImage from "../components/roundedImage"
 import Sidebar from "../components/sidebar"
 import Card from "../components/card"
