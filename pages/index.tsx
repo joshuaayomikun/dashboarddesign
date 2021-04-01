@@ -1,13 +1,22 @@
 import Icon from '@chakra-ui/icon'
 import { Input, InputGroup, InputRightElement } from '@chakra-ui/input'
-import { Box, Flex, Spacer, Text } from '@chakra-ui/layout'
-import Head from 'next/head'
+import { Box, Flex, Spacer, Text, } from '@chakra-ui/layout'
 import { MdSearch } from 'react-icons/md'
 import Card from '../components/card'
 import CustomLink from '../components/customLink'
 import { FcSimCardChip } from "react-icons/fc";
+import {FaSpotify} from "react-icons/fa"
 import { Column } from '@amcharts/amcharts4/charts'
-
+import {
+  Table,
+  Tbody,
+  Tfoot,
+  Tr,
+  Th,
+  Td,
+  TableCaption
+} from '@chakra-ui/react'
+import NextLink from 'next/link'
 export default function Home() {
   return (<>
     <Flex justifyContent={"center"} width={"100%"} height={"52px"}>
@@ -130,6 +139,24 @@ export default function Home() {
           </Card>
         </Flex>
       </Flex>
+    </Flex>
+    <Flex paddingY={"10"} direction={"column"}>
+      <Text>
+        Transactions
+      </Text>
+      <Table>
+        <Tbody>
+          <Tr>
+            <Td>
+              <NextLink href={"javaScript"}>
+                <CustomLink variant={"with-icon"}>
+                  <Icon color={"green.400"} as={FaSpotify} />
+                </CustomLink>
+              </NextLink>
+            </Td>
+          </Tr>
+        </Tbody>
+      </Table>
     </Flex>
   </>
   )
