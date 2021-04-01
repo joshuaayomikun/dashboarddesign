@@ -59,10 +59,11 @@ const Layout = (props) => {
     return <Box>
         <Flex>
             <Sidebar />
-            <Flex width={"100%"} padding={"10"} direction={"column"}>
-                {props.children}
-            </Flex>
-            <Flex marginLeft="auto" padding={"10"} direction="column">
+            <Flex wrap="wrap" width={"100%"} padding={"10"}>
+                <Flex direction={"column"}>
+                    {props.children}
+                </Flex>
+                <Flex marginLeft="auto" paddingRight={"10"} direction="column">
                 <Flex maxHeight={"14"} alignItems="center">
                     <RoundedImage src={"/myprofile.png"} variant={"small-avatar-with-Shadow"} />
                     <Text paddingX={"2"} fontWeight="extrabold">John Doe</Text>
@@ -98,6 +99,7 @@ const Layout = (props) => {
                 <Card title="Transaction details">
                     <Box id={"chartdiv"} height={"250px"} width={"auto"}></Box>
                 </Card>
+            </Flex>
             </Flex>
         </Flex>
     </Box>
