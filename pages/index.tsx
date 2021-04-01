@@ -147,12 +147,15 @@ export default function Home() {
       <Table>
         <Tbody>
           <Tr>
-            <Td>
+            <Td border={"none"}>
               <NextLink href={"javaScript"}>
-                <CustomLink variant={"with-icon"}>
+                <CustomLink variant={"icon-link-with-shadow"}>
                   <Icon color={"green.400"} as={FaSpotify} />
                 </CustomLink>
               </NextLink>
+              <Text as={"span"} paddingLeft={"6"}>
+                Spotify
+              </Text>
             </Td>
           </Tr>
         </Tbody>
