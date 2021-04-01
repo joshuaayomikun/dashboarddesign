@@ -5,7 +5,7 @@ const styles = {
     global: {
         // styles for the `body`
         body: {
-            bg: "white",
+            bg: "#fdfeff",
             color: "black",
         },
     },

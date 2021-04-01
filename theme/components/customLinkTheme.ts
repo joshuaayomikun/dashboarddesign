@@ -5,7 +5,7 @@ const CustomLink = {
     // 1. We can update the base styles
     baseStyle: {
         color: "brand.primary",
-        padding: "22px",
+        padding: "15px",
         borderRadius: "xl"
     },
     sizes: {
