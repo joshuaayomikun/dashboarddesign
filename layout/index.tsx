@@ -59,7 +59,7 @@ const Layout = (props) => {
     return <Box>
         <Flex>
             <Sidebar />
-            <Flex width={"100%"} padding={"10"}>
+            <Flex width={"100%"} padding={"10"} direction={"column"}>
                 {props.children}
             </Flex>
             <Flex marginLeft="auto" padding={"10"} direction="column">

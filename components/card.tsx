@@ -7,8 +7,9 @@ const Card = (props) => {
     const { children, title, ...rest } = props
     return (
         <Flex direction="column">
-            <Text fontSize={"2xl"} paddingTop={"10"} >{title}</Text>
-            <Box padding={"10"} shadow={"xl"} {...rest}>
+
+            {typeof title !== "undefined" && <Text fontSize={"2xl"} paddingTop={"10"} >{title}</Text>}
+            <Box padding={"20px"} shadow={"xl"} {...rest}>
                 {children}
             </Box>
         </Flex>

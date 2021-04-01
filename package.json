@@ -12,6 +12,7 @@
     "@chakra-ui/react": "^1.4.2",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
+    "flat-color-icons": "^1.1.0",
     "framer-motion": "^4.0.3",
     "next": "10.1.2",
     "next-transpile-modules": "^6.4.0",
