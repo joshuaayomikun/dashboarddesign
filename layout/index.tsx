@@ -62,7 +62,7 @@ const Layout = (props) => {
             <Spacer />
             <Flex wrap="wrap" position={"relative"} direction={"column"} justifyContent={"center"} width={"100%"} paddingRight={"10"} paddingY={"10"} marginLeft={"15%"}>
                 <Flex justifyContent={"space-between"} flexWrap={"wrap"}>
-                    <Flex justifyContent={"center"} width={"50%"}  height={"52px"}>
+                    <Flex  paddingTop={"6"}  justifyContent={"center"} width={"555px"} height={"87pxpx"}>
                         <InputGroup height={"62px"} width="100%" shadow={"lg"} borderRadius={"22px"} >
                             <Input type="tel" height={"62px"} placeholder="Search" borderRadius={"22px"} />
                             <InputRightElement top={"10px"}
@@ -72,18 +72,18 @@ const Layout = (props) => {
                             />
                         </InputGroup>
                     </Flex>
-                    <Flex maxHeight={"14"} alignItems="center">
+                    <Flex  height={"87pxpx"} paddingTop={"6"} alignItems="center">
                         <RoundedImage src={"/myprofile.png"} variant={"small-avatar-with-Shadow"} />
                         <Text paddingX={"2"} fontWeight="extrabold">John Doe</Text>
                         <NotificationBell />
                     </Flex>
                 </Flex>
-                <Flex>
+                <Flex flexWrap={"wrap"} justifyContent={"center"}>
                     <Flex direction={"column"}>
                         {props.children}
                     </Flex>
                     <Spacer />
-                    <Flex marginLeft="auto" direction="column">
+                    <Flex direction="column">
                         <Card title="Transfer money">
                             <Flex direction={"row"}>
                                 <Icon as={MdCreditCard} color={"white"} fontSize={"2xl"} bg={"brand.primary"} marginRight={"1.5"} />
