@@ -5,31 +5,20 @@ import { MdSearch } from 'react-icons/md'
 import Card from '../components/card'
 import CustomLink from '../components/customLink'
 import { FcSimCardChip } from "react-icons/fc";
-import {FaSpotify} from "react-icons/fa"
+import {FaInvision, FaSpotify} from "react-icons/fa"
 import { Column } from '@amcharts/amcharts4/charts'
 import {
-  Table,
   Tbody,
   Tfoot,
-  Tr,
-  Th,
   Td,
+  Th,
   TableCaption
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import Table, { Tr } from '../components/table'
 export default function Home() {
   return (<>
-    <Flex justifyContent={"center"} width={"100%"} height={"52px"}>
-      <InputGroup height={"62px"} width="100%" shadow={"lg"} borderRadius={"22px"} >
-        <Input type="tel" height={"62px"} placeholder="Search" borderRadius={"22px"} />
-        <InputRightElement top={"10px"}
-          right={"8px"}
-          pointerEvents="none"
-          children={<CustomLink bg={"brand.primary"} variant={"with-icon"}><Icon as={MdSearch} /></CustomLink>}
-        />
-      </InputGroup>
-    </Flex>
-    <Flex >
+    <Flex flexWrap={"wrap"} >
       <Card bg={"brand.primary"} color={"white"} title={"Cards"} borderRadius={"20px"} width={"290px"}>
         <Flex padding={"5px"} direction={"column"}>
           <Flex direction={"row"}>
@@ -79,9 +68,9 @@ export default function Home() {
         </Flex>
       </Card>
       <Flex>
-        <Flex width={"265px"} position={"relative"} transform={"rotate(-90deg);"}>
-          <Card top={"0"} zIndex={"10"} position={"absolute"} width={"191px"} height={"90px"} display={"flex"} borderRadius={"2xl"}>
-            <Box position={"relative"}>
+        <Flex boxSize={"265px"} position={"relative"} transform={"rotate(-90deg);"}>
+          <Card top={"0"} zIndex={"10"} alignItems={"center"} position={"absolute"} width={"191px"} height={"60px"} display={"flex"} borderRadius={"2xl"}>
+            <Box position={"relative"} height={"30px"} width={"50px"}>
               <Box boxSize={"30px"} left={"0px"} position={"absolute"} borderRadius={"full"} bg={"#ea0119"}></Box>
               <Box boxSize={"30px"} left={"20px"} position={"absolute"} borderRadius={"full"} bg={"#f79e19"}></Box>
             </Box>
@@ -94,9 +83,9 @@ export default function Home() {
               <Text paddingLeft={"10px"} fontSize={"8px"}>3456</Text>
             </Flex>
           </Card>
-          <Card top={"80px"} zIndex={"20"} position={"absolute"} width={"191px"} height={"90px"} display={"flex"} borderRadius={"2xl"}>
+          <Card top={"60px"} zIndex={"20"} alignItems={"center"} position={"absolute"} width={"191px"} height={"60px"} display={"flex"} borderRadius={"2xl"}>
             <Box position={"relative"}>
-              <Text paddingX={"10px"} fontSize={"21px"} fontWeight={"900"} color={"gray"}>
+              <Text paddingX={"10px"} fontSize={"15px"} fontWeight={"900"} color={"gray"}>
                 VISA
                 </Text>
             </Box>
@@ -109,8 +98,8 @@ export default function Home() {
               <Text paddingLeft={"10px"} fontSize={"8px"}>3456</Text>
             </Flex>
           </Card>
-          <Card top={"180px"} position={"absolute"} width={"191px"} height={"90px"} display={"flex"} borderRadius={"2xl"}>
-            <Box position={"relative"}>
+          <Card top={"120px"} position={"absolute"} alignItems={"center"} width={"191px"} height={"60px"} display={"flex"} borderRadius={"2xl"}>
+            <Box position={"relative"} height={"30px"} width={"50px"}>
               <Box boxSize={"30px"} left={"0px"} position={"absolute"} borderRadius={"full"} bg={"#ea0119"}></Box>
               <Box boxSize={"30px"} left={"20px"} position={"absolute"} borderRadius={"full"} bg={"#f79e19"}></Box>
             </Box>
@@ -123,8 +112,8 @@ export default function Home() {
               <Text paddingLeft={"10px"} fontSize={"8px"}>3456</Text>
             </Flex>
           </Card>
-          <Card top={"270px"} position={"absolute"} width={"191px"} height={"90px"} display={"flex"} borderRadius={"2xl"}>
-            <Box position={"relative"}>
+          <Card top={"180px"} position={"absolute"} alignItems={"center"} width={"191px"} height={"60px"} display={"flex"} borderRadius={"2xl"}>
+            <Box position={"relative"} height={"30px"} width={"50px"}>
               <Box boxSize={"30px"} left={"0px"} position={"absolute"} borderRadius={"full"} bg={"#ea0119"}></Box>
               <Box boxSize={"30px"} left={"20px"} position={"absolute"} borderRadius={"full"} bg={"#f79e19"}></Box>
             </Box>
@@ -156,6 +145,66 @@ export default function Home() {
               <Text as={"span"} paddingLeft={"6"}>
                 Spotify
               </Text>
+            </Td>
+            <Td>
+              <Text>August 29, 1:25PM</Text>
+            </Td>
+            <Td>
+              <Text fontWeight={"bold"}>-$18.35</Text>
+            </Td>
+          </Tr>
+          <Tr>
+            <Td border={"none"}>
+              <NextLink href={"javaScript"}>
+                <CustomLink variant={"icon-link-with-shadow"}>
+                  <Icon color={"pink.400"} as={FaInvision} />
+                </CustomLink>
+              </NextLink>
+              <Text as={"span"} paddingLeft={"6"}>
+                Invision Studio
+              </Text>
+            </Td>
+            <Td>
+              <Text>August 20, 2:34PM</Text>
+            </Td>
+            <Td>
+              <Text fontWeight={"bold"}>-$149.00</Text>
+            </Td>
+          </Tr>
+          <Tr>
+            <Td border={"none"}>
+              <NextLink href={"javaScript"}>
+                <CustomLink variant={"icon-link-with-shadow"}>
+                  <Icon color={"green.400"} as={FaSpotify} />
+                </CustomLink>
+              </NextLink>
+              <Text as={"span"} paddingLeft={"6"}>
+                Spotify
+              </Text>
+            </Td>
+            <Td>
+              <Text>August 29, 1:25PM</Text>
+            </Td>
+            <Td>
+              <Text fontWeight={"bold"}>-$18.35</Text>
+            </Td>
+          </Tr>
+          <Tr>
+            <Td border={"none"}>
+              <NextLink href={"javaScript"}>
+                <CustomLink variant={"icon-link-with-shadow"}>
+                  <Icon color={"green.400"} as={FaSpotify} />
+                </CustomLink>
+              </NextLink>
+              <Text as={"span"} paddingLeft={"6"}>
+                Spotify
+              </Text>
+            </Td>
+            <Td>
+              <Text>August 29, 1:25PM</Text>
+            </Td>
+            <Td>
+              <Text fontWeight={"bold"}>-$18.35</Text>
             </Td>
           </Tr>
         </Tbody>

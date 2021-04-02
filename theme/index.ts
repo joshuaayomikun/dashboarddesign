@@ -11,6 +11,7 @@ import CustomLink from "./components/customLinkTheme"
 import CustomMenu from "./components/customMenuTheme"
 import RoundedImage from "./components/roundedImageTheme"
 import NotificationBell from "./components/notificationBellTheme"
+import CustomTable from "./components/customTableTheme"
 
 // const overrides = {
 //   colors,
@@ -30,7 +31,8 @@ const overrides = {
         CustomLink,
         CustomMenu,
         RoundedImage,
-        NotificationBell
+        NotificationBell,
+        CustomTable
     }
 }
 
