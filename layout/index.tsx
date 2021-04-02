@@ -60,8 +60,8 @@ const Layout = (props) => {
         <Flex>
             <Sidebar />
             <Spacer />
-            <Flex wrap="wrap" position={"relative"} direction={"column"} justifyContent={"center"} width={"100%"} paddingRight={"10"} paddingY={"10"} marginLeft={"15%"}>
-                <Flex justifyContent={"space-between"} flexWrap={"wrap"}>
+            <Flex wrap="wrap" position={"relative"} direction={"column"} justifyContent={"center"} width={"100%"} paddingRight={"10"} paddingY={"10"} ml={{base:"15%", md:"15%", sm:"25%"}}>
+                <Flex justifyContent={"space-between"} flexWrap={"wrap-reverse"}>
                     <Flex  paddingTop={"6"}  justifyContent={"center"} width={"555px"} height={"87pxpx"}>
                         <InputGroup height={"62px"} width="100%" shadow={"lg"} borderRadius={"22px"} >
                             <Input type="tel" height={"62px"} placeholder="Search" borderRadius={"22px"} />

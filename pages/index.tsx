@@ -19,7 +19,7 @@ import Table, { Tr } from '../components/table'
 export default function Home() {
   return (<>
     <Flex flexWrap={"wrap"} >
-      <Card bg={"brand.primary"} color={"white"} title={"Cards"} borderRadius={"20px"} width={"290px"}>
+      <Card bgGradient={"linear-gradient(to right, #c31432, #240b36)"} color={"white"} title={"Cards"} borderRadius={"20px"} width={"290px"}>
         <Flex padding={"5px"} direction={"column"}>
           <Flex direction={"row"}>
             <Flex direction={"column"}>

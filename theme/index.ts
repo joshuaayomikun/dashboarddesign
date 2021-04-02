@@ -1,5 +1,6 @@
 // theme.js
 import { extendTheme } from "@chakra-ui/react"
+import { createBreakpoints } from "@chakra-ui/theme-tools"
 
 // Global style overrides
 import styles from "./styles"
@@ -22,11 +23,18 @@ import CustomTable from "./components/customTableTheme"
 //   }
 
 // }
-
+// 2. Update the breakpoints as key-value pairs
+const breakpoints = createBreakpoints({
+    sm: "320px",
+    md: "768px",
+    lg: "960px",
+    xl: "1200px",
+  })
 const overrides = {
     styles,
     colors,
     sizes,
+    breakpoints,
     components: {
         CustomLink,
         CustomMenu,
